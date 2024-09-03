@@ -1,0 +1,82 @@
+*{margin:0;
+padding:0;
+} /*Não deixar que os itens da página atinjam as extremidades*/
+body{
+    background-color: rgb(255, 33, 107); /*cor do fundo*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*tipo da fonte*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-style: normal; /*estilo da fonte*/
+}
+hr{
+    display: block; /*Não permite movimentação da linha*/
+    margin-top: 0.5em; /*Espaçamento entre o topo da margem*/
+    margin-bottom: 0.5em; /*Espaçamento entre a parte de baixo*/
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset; /*Estilo da borda*/
+    border-width: 1px; /*Largura da borda*/
+    border-color: rgb(255, 50, 153);/*Cor da borda*/
+}
+
+header img{ /*Definições da imagem que estão dentro do cabeçalho*/
+    width: 100px; /*Largura da imagem*/
+    height: 100px; /*Altura da imagem*/
+    margin:10px; /*Margem da imagem*/
+}
+
+header h1{/*Definições do título que estão dentro do cabeçalho*/
+    color:rgb(255, 255, 255); /*Cor do texto*/
+-webkit-text-stroke: 2px rgba(255, 255, 255, 0); /*Contorno do texto*/
+padding-top: 30px; /*Espaçamento entre o topo e o texto*/
+}
+#menu ul{/*ID para lista*/
+list-style: none; /*Sem nenhume estilo na lista, tira os pontos*/
+margin-left: 500px;}
+#menu li {
+    position: relative; /*Posição relativa do item da lista*/
+}
+#menu li a{
+    color: rgb(255, 255, 255); /*cor do texto do menu*/
+    text-decoration: none; /*Sem estilo no texto*/
+    padding: 5px 10px; /*Espaçamento entre os textos no Menu*/
+    display: block; /*opções do menu bloqueadas na posição atual*/
+}
+#menu li a:hover{
+    background: rgb(254, 254, 254); /*Fundo do efeito*/
+    color: rgb(202, 0, 91); /*Cor do texto no efeito*/
+    text-shadow: 0px 0px 5px black; /*Sombra do efeito*/
+}
+#menu li ul{
+    position:absolute;
+    top: 25px; /*Espaçamento do topo*/
+    left: 0; /*Espaçamento da esquerda*/
+    background-color: rgb(255, 0, 255);
+    display: none;
+}
+#menu li:hover ul, #menu li.over ul{
+    display: block; /*Durante o efeito não moverá o menu*/
+}
+header, #menu, #menu ul{
+    display: flex;
+}
+
+ footer hr {
+    margin-top: 1000px;
+    margin-bottom: 0.5em;
+    margin-left: 500px;
+    border-style: inset;
+    border-width: 1px; /*Largura da borda*/
+    border-color: rgb(0, 0, 0); Cor da borda
+  }
+
+  footer img{
+    width: 200px;
+    height: 200px;
+    }
+
+    footer h1{
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px rgba(12, 12, 12, 0);
+    padding-bottom: 15px;
+    }
+
